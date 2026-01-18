@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Harvest-Home</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <header class="bg-[var(--color-bg)] text-[var(--color-text)]">
+  <nav class="nav-container" aria-label="Primary Navigation">
+
+    <!-- ================= LOGO SECTION ================= -->
+      <!-- Flex used to align logo image and text horizontally -->
+      <div class="flex items-center gap-3">
+
+        <!-- LOGO IMAGE -->
+        <img 
+          src="../public/sub_Logo.png" 
+          alt="Urban Harvest Logo"
+          class="h-10 w-auto"
+        />
+
+        <!-- LOGO TEXT (Brand Name) -->
+        <span class="text-2xl font-bold text-white">
+          Urban Harvest
+        </span>
+      </div>
+
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="subscribe.html" class="nav-link">Subscribe</a></li>
+      <li><a href="community.html" class="nav-link">Community</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="flex items-center space-x-3">
+
+      <!-- Dark Mode Toggle -->
+      <button
+        id="theme-toggle"
+        class="icon-btn"
+        aria-label="Toggle dark mode"
+      >
+        🌙
+      </button>
+
+      <!-- Hamburger Menu -->
+      <button
+        id="menu-btn"
+        class="icon-btn md:hidden"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-[var(--color-bg)]"
+  >
+    <ul class="flex flex-col text-center py-4 space-y-4">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="subscribe.html" class="nav-link">Subscribe</a></li>
+      <li><a href="community.html" class="nav-link">Community</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<div><h1>hii</h1></div>
+
+<footer class="bg-[var(--color-bg)] text-[var(--color-text)] mt-16">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-4">
+
+    <!-- Brand -->
+    <div>
+      <h2 class="text-xl font-bold mb-3">Urban Harvest</h2>
+      <p class="text-sm leading-relaxed">
+        Promoting sustainable urban living through eco-friendly products,
+        responsible sourcing, and community-driven initiatives.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-semibold mb-3">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-[var(--color-accent)]">Home</a></li>
+        <li><a href="products.html" class="hover:text-[var(--color-accent)]">Products</a></li>
+        <li><a href="subscribe.html" class="hover:text-[var(--color-accent)]">Subscribe</a></li>
+        <li><a href="community.html" class="hover:text-[var(--color-accent)]">Community</a></li>
+        <li><a href="about.html" class="hover:text-[var(--color-accent)]">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-semibold mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Email: hello@urbanharvest.com</li>
+        <li>Phone: +94 00 000 0000</li>
+        <li>Location: Sri Lanka</li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div>
+      <h3 class="font-semibold mb-3">Follow Us</h3>
+      <div class="flex space-x-4 text-sm">
+        <a href="#" class="hover:text-[var(--color-accent)]">Facebook</a>
+        <a href="#" class="hover:text-[var(--color-accent)]">Instagram</a>
+        <a href="#" class="hover:text-[var(--color-accent)]">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-[var(--color-accent)] text-center py-4 text-sm">
+    © 2026 Urban Harvest. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
+
+<!-- img src="../public/Main_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" /> -->
+
+<!-- <a href="./src/pages/home.js"></a> -->

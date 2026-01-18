@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   CSS VARIABLES (COLOR SCHEME)
+================================ */
+:root {
+  --color-bg: #14532d;        /* green-900 */
+  --color-text: #ecfdf5;      /* green-50 */
+  --color-accent: #22c55e;    /* green-500 */
+}
+
+.dark {
+  --color-bg: #052e16;        /* darker green */
+  --color-text: #d1fae5;
+  --color-accent: #4ade80;
+}
+
+/* ===============================
+   CUSTOM COMPONENTS (@layer)
+================================ */
+@layer components {
+  .nav-link {
+    @apply hover:text-[var(--color-accent)]
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)]
+           transition;
+  }
+
+  .nav-container {
+    @apply max-w-7xl mx-auto px-4 py-4 flex items-center justify-between;
+  }
+
+  .icon-btn {
+    @apply p-2 rounded focus:ring-2 focus:ring-[var(--color-accent)];
+  }
+}
